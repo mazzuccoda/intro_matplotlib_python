@@ -40,7 +40,16 @@ if __name__ == '__main__':
 
     # Se debe colocar en la leyenda la función que representa
     # cada función
+    fig = plt.figure()
+    fig.suptitle('Gastos mensuales', fontsize=16)
+    ax = fig.add_subplot()
 
+    ax.plot(x, y1, label='y1')
+    ax.plot(x, y2, label='y2')
+    ax.legend()
+    ax.grid()
+    plt.show()
+    
     # Cada función dibujarla con un color distinto
     # a su elección
 

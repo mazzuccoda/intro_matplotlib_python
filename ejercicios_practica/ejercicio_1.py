@@ -24,7 +24,7 @@ if __name__ == '__main__':
     # y = x**2
 
     x = list(range(-10, 11, 1))
-
+    
     # Bucle que completa y calcula todos los valores de "y"
     y = []
     for i in x:
@@ -32,7 +32,16 @@ if __name__ == '__main__':
 
     # Crear una "figura" y crear un "ax" con add_subplot
     # Graficar el "line plot" de "y" en función de "x"
+    fig = plt.figure()
+    fig.suptitle('Y = x**2', fontsize=16)
+    ax = fig.add_subplot()
 
+    ax.plot(x, y, c='darkgreen', label='x')
+    ax.legend()
+    ax.grid()
+    plt.show()
+    print("Fin line plot")
+    
     # Colocar la leyenda y el label con el nombre de la función
     # Darle color a la línea a su elección
 

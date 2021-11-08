@@ -30,6 +30,16 @@ if __name__ == '__main__':
 
     # Colocar la leyenda y el label con el nombre de la función
 
+    fig = plt.figure()
+    fig.suptitle('scatter', fontsize=16)
+    ax = fig.add_subplot()
+
+    ax.scatter(x, y, c='darkgreen', label='x',marker = "x")
+    ax.legend()
+    ax.grid()
+    plt.show()
+    print("Fin line plot")
+
     # Elegir un marker a elección
 
     # Crear acá su gráfico
